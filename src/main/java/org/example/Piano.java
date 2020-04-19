@@ -14,12 +14,12 @@ public class Piano extends Instrument implements Keyboard, Strings {
         System.out.println("Beethoven 17th Sonata, 3rd movement");
     }
 
-    @Override
+
     public boolean keyboard() {
         return true;
     }
 
-    @Override
+
     public short strings() {
         return 230;
     }

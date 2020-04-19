@@ -13,8 +13,8 @@ public abstract class Instrument {
         setPrice(price);
     }
 
-    float getPrice() {
-        return price;
+    void getPrice() {
+         out.println(price);;
     }
 
     void setPrice(float price) {
