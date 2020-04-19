@@ -1,8 +1,12 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Piano extends Instrument implements Keyboard, Strings {
 
     public String manufacturer;
+    public static ArrayList <String> repertoire = new ArrayList<>();
 
     Piano(float price, String manufacturer) {
         super(price);
@@ -11,14 +15,21 @@ public class Piano extends Instrument implements Keyboard, Strings {
 
     @Override
     public void sound() {
-        System.out.println("Beethoven 17th Sonata, 3rd movement");
+        System.out.println(repertoire.get(0));
     }
 
+
+    public static void addSong (){
+        String title;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your favourite song");
+        title = scan.nextLine();
+        repertoire.add(title);
+    }
 
     public boolean keyboard() {
         return true;
     }
-
 
     public short strings() {
         return 230;

@@ -6,6 +6,7 @@ public class App
     public static void main( String[] args ) throws InstrumentIsBrokenException {
         Piano grandPiano = new Piano(100500, "Steinway");
         grandPiano.setColor(Color.VIOLET);
+        grandPiano.addSong();
         grandPiano.sound();
         grandPiano.play(false);
         grandPiano.sell("100");
