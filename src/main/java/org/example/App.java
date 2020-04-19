@@ -10,6 +10,7 @@ public class App
         grandPiano.sound();
         grandPiano.play(false);
         grandPiano.sell("100");
+        grandPiano.getInCount();
 
         Violin stradivari = new Violin(500);
         stradivari.setColor(Color.WHITE);

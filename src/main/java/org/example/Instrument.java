@@ -5,7 +5,13 @@ import static java.lang.System.out;
 public abstract class Instrument {
     private Color color;
     private float price;
-    private int inCount;
+    private byte inCount = 100;
+
+    public void getInCount() {
+        out.println(inCount);
+    }
+
+
 
     public abstract void sound();
 
