@@ -11,8 +11,6 @@ public abstract class Instrument {
         out.println(inCount);
     }
 
-
-
     public abstract void sound();
 
     Instrument(float price) {
@@ -21,6 +19,10 @@ public abstract class Instrument {
 
     void getPrice() {
          out.println(price);;
+    }
+
+    void getColor() {
+        out.println(color);
     }
 
     void setPrice(float price) {
@@ -40,7 +42,6 @@ public abstract class Instrument {
             out.println("Sorry, customer is out of money!");
         }
     }
-
 
     public void play(boolean isBroken) throws InstrumentIsBrokenException {
         if (isBroken) {

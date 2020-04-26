@@ -3,7 +3,7 @@ package org.example;
 
 public class App
 {
-    public static void main( String[] args ) throws InstrumentIsBrokenException {
+    public static void main( String[] args ) throws InstrumentIsBrokenException, NoVodkaException {
         Piano grandPiano = new Piano(100500, "Steinway");
         grandPiano.setColor(Color.VIOLET);
         grandPiano.addSong();
@@ -21,9 +21,11 @@ public class App
 
         Accordion bayan = new Accordion(0);
         bayan.setColor(Color.GREEN);
+        bayan.getColor();
         bayan.sound();
         bayan.tear_apart();
         bayan.sell("999999999");
-        bayan.play(true);
+        bayan.murka("give me VoDkA");
+        bayan.murka("give me passion");
     }
 }
