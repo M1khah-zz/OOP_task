@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Piano extends Instrument implements Keyboard, Strings {
 
     public String manufacturer;
-    public static ArrayList <String> repertoire = new ArrayList<>();
+    public  ArrayList <String> repertoire = new ArrayList<>();
 
     Piano(float price, String manufacturer) {
         super(price);
@@ -19,7 +19,7 @@ public class Piano extends Instrument implements Keyboard, Strings {
     }
 
 
-    public static void addSong (){
+    public  void addSong (){
         String title;
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your favourite song");
