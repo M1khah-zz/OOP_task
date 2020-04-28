@@ -25,7 +25,7 @@ public class Accordion extends Instrument implements Keyboard {
         return true;
     }
 
-    public void showSecret() {
+    public void getSecret() {
         System.out.println(secret);
     }
 

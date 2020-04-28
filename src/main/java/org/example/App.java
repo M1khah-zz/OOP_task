@@ -11,6 +11,7 @@ public class App
         grandPiano.play(false);
         grandPiano.sell("100");
         grandPiano.getInCount();
+        grandPiano.forWhat();
 
         Violin stradivari = new Violin(500);
         stradivari.setColor(Color.WHITE);
@@ -18,6 +19,7 @@ public class App
         stradivari.getPrice();
         stradivari.sound();
         stradivari.sell("12");
+        stradivari.forWhat();
 
         Accordion bayan = new Accordion(0);
         bayan.setColor(Color.GREEN);
@@ -26,9 +28,10 @@ public class App
         bayan.tear_apart();
         bayan.sell("999999999");
         bayan.murka("give me VoDkA");
-        bayan.showSecret();
+        bayan.getSecret();
         bayan.setSecret("Spirit is the key");
-        bayan.showSecret();
+        bayan.getSecret();
+        bayan.forWhat();
         bayan.murka("give me passion");
     }
 }

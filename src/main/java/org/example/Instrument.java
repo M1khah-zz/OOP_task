@@ -50,5 +50,11 @@ public abstract class Instrument {
         out.println("Adagio");
     }
 
+    static String reason = "To impress somebody";
+
+    protected void forWhat() {
+        out.println(reason);
+    }
+
 
 }
