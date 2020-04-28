@@ -26,6 +26,9 @@ public class App
         bayan.tear_apart();
         bayan.sell("999999999");
         bayan.murka("give me VoDkA");
+        bayan.showSecret();
+        bayan.setSecret("Spirit is the key");
+        bayan.showSecret();
         bayan.murka("give me passion");
     }
 }

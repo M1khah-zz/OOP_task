@@ -19,7 +19,17 @@ public class Accordion extends Instrument implements Keyboard {
         System.out.println("Mikhuil Mavashi");
     }
 
+    private String secret = "There is no spoon... neither vodka";
+
     public boolean keyboard() {
         return true;
+    }
+
+    public void showSecret() {
+        System.out.println(secret);
+    }
+
+    public void setSecret(String secret) {
+        this.secret = secret;
     }
 }
