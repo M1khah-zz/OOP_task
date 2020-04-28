@@ -56,5 +56,7 @@ public abstract class Instrument {
         out.println(reason);
     }
 
+    static void changeReason(){ reason = "To endure or perish";}
+
 
 }

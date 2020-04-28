@@ -20,6 +20,9 @@ public class App
         stradivari.sound();
         stradivari.sell("12");
         stradivari.forWhat();
+        stradivari.changeReason();
+        stradivari.forWhat();
+
 
         Accordion bayan = new Accordion(0);
         bayan.setColor(Color.GREEN);
